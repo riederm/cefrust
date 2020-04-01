@@ -8,7 +8,7 @@ extern crate nix;
 #[macro_use]
 extern crate objc;
 
-mod app;
+pub mod app;
 mod client;
 #[cfg(target_os = "linux")]
 mod gtk2;

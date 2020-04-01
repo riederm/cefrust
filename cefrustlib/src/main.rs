@@ -15,7 +15,7 @@ fn cef() {
     let appp = Box::into_raw(app);
 
     println!("call init");
-    cefrustlib::init(appp, cefrust_path.as_ptr());
+    cefrustlib::cefswt_init(appp, cefrust_path.as_ptr());
     println!("after call init");
 
     let ten = std::time::Duration::from_secs(8);
@@ -27,7 +27,7 @@ fn cef() {
     println!("call shutdown");
 
     // Shut down CEF.
-    cefrustlib::shut();
+    cefrustlib::cefswt_shutdown();
     println!("after call shutdown");
 
     println!("app {:?}", appp);

@@ -23,4 +23,4 @@ objc = "0.2.2"
 
 [lib]
 name = "cefrustlib"
-crate-type = ["dylib"]
+crate-type = ["rlib", "dylib"]
